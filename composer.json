@@ -1,0 +1,17 @@
+{
+    "name": "marshung/autoloader",
+    "description": "Provides automatic loading of services during development",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mars Hung",
+            "email": "tfaredxj@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "marshung\\autoloader\\": "src" }
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}

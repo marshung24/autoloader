@@ -10,7 +10,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "marshung\\": "src" }
+        "classmap": ["src/"]
     },
     "minimum-stability": "stable",
     "require": {}

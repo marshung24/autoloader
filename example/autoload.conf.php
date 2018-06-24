@@ -9,8 +9,4 @@
  * @var Mars.Hung
  */
 
-
-define('__ROOT__', $_SERVER["DOCUMENT_ROOT"]);
-
-
-$pathMap['marshung\\io\\'] = __ROOT__.'/io/src/';
+$pathMap['marshung\\io\\'] = __DIR__.'/io/src/';

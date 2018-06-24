@@ -26,11 +26,12 @@ class Autoloader
     public static function autoloader()
     {
         $pMap = array();
-        $docRoot = $_SERVER["DOCUMENT_ROOT"];
+        // 與vendor同層
+        $docRoot = __DIR__.'/../../../../';
         
         // 讀入路徑設定檔
-        if (file_exists($docRoot . '/autoload.conf.php')) {
-            include_once ($docRoot . '/autoload.conf.php');
+        if (file_exists($docRoot . 'autoload.conf.php')) {
+            include_once ($docRoot . 'autoload.conf.php');
             
             // 讀取設定檔的路徑對映表
             if (isset($pathMap) && is_array($pathMap)) {
